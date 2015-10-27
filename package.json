@@ -1,0 +1,28 @@
+{
+  "name": "star-wars",
+  "description": "Use the --force, Luke",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lewiscowper/star-wars.git"
+  },
+  "keywords": [
+    "star",
+    "wars",
+    "force"
+  ],
+  "author": "Lewis Cowper <lewis.cowper@googlemail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/lewiscowper/star-wars/issues"
+  },
+  "homepage": "https://github.com/lewiscowper/star-wars#readme",
+  "devDependencies": {
+    "tape": "^4.2.2",
+    "semantic-release": "^4.3.5"
+  }
+}
