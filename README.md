@@ -21,7 +21,7 @@ var starwars = require('star-wars');
 if (starwars(process.argv)) {
   // do the intended action
 } else {
-  console.log('Are you sure you want to do this? Add \'force\' or \'--force\' as an argument to continue');
+  console.log('Do or do not, there is no try');
 };
 ```
 
