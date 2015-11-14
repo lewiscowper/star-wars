@@ -3,11 +3,9 @@ module.exports = function (array) {
     return false;
   }
 
-  for (var i = array.length - 1; i >= 0; i--) {
-    if (array[i] === '--force' || array[i] === 'force') {
-      return true;
-    }
+  if (array.indexOf('force') > -1 || array.indexOf('--force') > -1) {
+    return true;
+  } else {
+    return false;
   }
-
-  return false;
 };
