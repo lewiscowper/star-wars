@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
+    "preversion": "npm run test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
