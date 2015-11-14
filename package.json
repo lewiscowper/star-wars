@@ -3,7 +3,9 @@
   "description": "Use the --force, Luke",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "npm-run-all test:*",
+    "test:lint": "eslint *.js",
+    "test:javascript": "node test.js",
     "preversion": "npm run test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -23,8 +25,10 @@
   },
   "homepage": "https://github.com/lewiscowper/star-wars#readme",
   "devDependencies": {
-    "tape": "^4.2.2",
-    "semantic-release": "^4.3.5"
+    "eslint": "^1.9.0",
+    "npm-run-all": "^1.2.13",
+    "semantic-release": "^4.3.5",
+    "tape": "^4.2.2"
   },
   "version": "1.2.1"
 }

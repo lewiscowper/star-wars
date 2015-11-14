@@ -7,7 +7,7 @@ module.exports = function (array) {
     if (array[i] === '--force' || array[i] === 'force') {
       return true;
     }
-  };
+  }
 
   return false;
 };
