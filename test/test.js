@@ -1,4 +1,4 @@
-var starwars = require('./index.js');
+var starwars = require('../src/index.js');
 var test = require('tape');
 
 test ('star-wars argument list tests', function (t) {

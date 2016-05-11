@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
-    "test:lint": "eslint *.js",
-    "test:javascript": "node test.js",
+    "test:lint": "eslint **/*.js",
+    "test:javascript": "tap test/test.js",
     "preversion": "npm run test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
